@@ -1,0 +1,161 @@
+<html>
+    <head>
+        <title>Survey form</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="ut-8">
+        <meta name="description" content="A survey form">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script defer src="JavaScript/jquery-3.4.1.min.js"></script>
+    </head>
+    <body>
+        <main>
+            <header class="main-header">
+                <h1>Survey Form</h1>
+            </header>
+            <div class="container">
+                <section class="survey-form">
+                    <h2>Let us know how to improve our office</h2>
+                        <form action="">
+                            <div class="row">
+                                <div class="col-lg-4 offset-lg-1">
+                                    <label for="name">Name:</label>
+                                </div>
+                                <div class="col-lg-4 offset-lg-1">
+                                    <input type="text" id="name" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4 offset-lg-1">
+                                    <label for="name">Email:</label>
+                                </div>
+                                <div class="col-lg-4 offset-lg-1">
+                                    <input type="email" id="email" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4 offset-lg-1">
+                                    <label for="age">Age:</label>
+                                </div>
+                                <div class="col-lg-4 offset-lg-1">
+                                    <input type="text" id="age" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4 offset-lg-1">
+                                    <label for="role">Which option best describes your current role:</label>
+                                </div>
+                                <div class="col-lg-4 offset-lg-1">
+                                    <select name="select_role" id="role">
+                                        <option value="">Student</option>
+                                        <option value="">Full time job</option>
+                                        <option value="">Full time learner</option>
+                                        <option value="">Prefer not to say</option>
+                                        <option value="">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4 offset-lg-1">
+                                    <p>How likely is that you would recommend freeCodeCamp to a friend?:</p>
+                                </div>
+                                <div class="col-lg-4 offset-lg-1">
+                                   <div>
+                                       <input type="radio" id="definitely" name="recommend" value="definitely" >
+                                       <label for="definitely">Definitely</label>
+                                   </div>
+                                    <div>
+                                        <input type="radio" name="recommend" id="mayBe" value="maybe" >
+                                        <label for="mayBe">Maybe</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="recommend" id="notSure" value="Not sure" >
+                                        <label for="notSure">Not sure</label>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4 offset-lg-1">
+                                    <label for="like">What do you most like about FCC:</label>
+                                </div>
+                                <div class="col-lg-4 offset-lg-1">
+                                    <select name="most_like" id="like">
+                                        <option value="" selected disabled>Select an option</option>
+                                        <option value="">Challenges</option>
+                                        <option value="">Community</option>
+                                        <option value="">Projects</option>
+                                        <option value="">Open Source</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-4 offset-lg-1">
+                                    <p>Things that should be improved in the future(Check all that apply)</p>
+                                </div>
+                                <div class="col-lg-4 offset-lg-1">
+                                    <div>
+                                        <input type="checkbox" value="front end" id="frontEndId" name="frontEnd">
+                                        <label for="frontEndId">Front-end Projects</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" value="front end" id="backEndId" name="frontEnd">
+                                        <label for="backEndId">Back-end Projects</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" value="data visualization"
+                                               id="dataVisualizationId" name="dataVisualization">
+                                        <label for="dataVisualizationId">Front-end Projects</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" value="challenges" id="challengeId" name="challenge">
+                                        <label for="challengeId">Challenges</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" value="open source" id="openSourceId" name="openSource">
+                                        <label for="openSourceId">Open Source Community</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" value="gitter help" id="helpRoomId" name="helpRoom">
+                                        <label for="helpRoomId">Gitter help rooms</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" value="Videos" id="videoId" name="video" >
+                                        <label for="videoId">Videos</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" value="city meetups" id="cityMeetup">
+                                        <label for="cityMeetup">City Meetups</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" value="wiki" id="wikiId" name="wiki">
+                                        <label for="wikiId">Wiki</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" value="forum" id="forumId" name="forum">
+                                        <label for="forumId">Forum</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" value="front end" id="additionalCourseId" name="additionalCourses">
+                                        <label for="additionalCourseId">Additionsl Courses</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4 offset-lg-1">
+                                    <label for="commentId">Any comments?</label>
+                                </div>
+                                <div class="col-lg-4 offset-lg-1">
+                                    <textarea name="cooments" id="commentId"></textarea>
+                                </div>
+
+                            </div>
+
+                        </form>
+                </section>
+                
+            </div>
+        </main>
+    </body>
+</html>
